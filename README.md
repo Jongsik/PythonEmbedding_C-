@@ -1,4 +1,4 @@
-# PythonEmbedding_C-
+# PythonEmbedding in C++
 Python Embedding Class in C++
 
 [Usage]
