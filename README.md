@@ -2,8 +2,8 @@
 Python Embedding Class in C++
 
 [Usage]
-1. Initialize
-2. Function Call
+1. Initialize with SetPath()
+2. Function Call (See the TestFunction)
 
 [Enviroment]
 - Windows 10
