@@ -51,24 +51,6 @@ void PyManager::SendSimpleQuery(int nRows, ...) {
 	va_end(vargs);
 }
 
-int realsum(int count, ...)
-{
-	va_list ap;
-	va_start(ap, count);
-
-	int sum = 0;
-	for (int i = 0; i < count; ++i) {
-		int n = va_arg(ap, int);
-		sum += n;
-		printf("%d\n", n);
-	}
-
-
-	va_end(ap);
-
-	return sum;
-}
-
 template<typename T, typename... Types>
 bool PyManager::PyCallFunction(string strModuleName, string strFunction, string strModulePath, T szText, Types... args) {
 	bool bRes = false;
@@ -131,6 +113,5 @@ bool PyManager::PyCallFunction(string strModuleName, string strFunction, string 
 }
 
 void PyManager::testfunction() {
-	//PyCallFunction("testPy", "test", "", "ii", 0, 123);
-	PyCallFunction("gan", "GAN", "ii", 1, 2);
+	PyCallFunction("testPy", "test", "", "ii", 0, 123);
 }
