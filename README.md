@@ -1,6 +1,5 @@
 # PythonEmbedding in C++
-Python Embedding Class for C++
-Make for MFC Project
+Python Embedding Class for C++ / Make for MFC Project
 
 # Usage
 1. Initialize with SetPath()
